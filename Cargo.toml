@@ -7,15 +7,9 @@ version = "0.2.1-alpha.0"
 
 
 [dependencies]
-num-traits = "0.1"
-rand = "0.5"
 rayon = "1.0"
 serde = "1.0"
 serde_derive = "1.0"
-rust-gmp = { version="0.5", optional=true }
-ring = { version="0.13", optional=true }
-
-bit-vec = "0.5"
 
 [dependencies.curv]
 git = "https://github.com/KZen-networks/curv"
@@ -23,6 +17,7 @@ branch = "known_issues"
 
 [dev-dependencies]
 bencher = "0.1"
+rand = "0.5"
 serde_json = "1.0"
 
 [[bench]]

@@ -1,7 +1,4 @@
-extern crate bit_vec;
 extern crate curv;
-extern crate num_traits;
-extern crate rand;
 extern crate rayon;
 extern crate serde;
 //extern crate test;
