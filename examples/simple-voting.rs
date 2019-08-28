@@ -3,6 +3,7 @@ extern crate paillier;
 extern crate rand;
 extern crate serde_json;
 
+#[cfg(feature = "keygen")]
 use paillier::*;
 
 #[cfg(not(feature = "keygen"))]
@@ -47,11 +48,13 @@ fn main() {
     );
 }
 
+#[cfg(feature = "keygen")]
 struct Clerk {
     ek: EncryptionKey,
     dk: DecryptionKey,
 }
 
+#[cfg(feature = "keygen")]
 impl Clerk {
     fn new() -> Self {
         // generate fresh keypair
@@ -81,11 +84,13 @@ impl Clerk {
     }
 }
 
+#[cfg(feature = "keygen")]
 struct Voter {
     ek: EncryptionKey,
     vote: bool,
 }
 
+#[cfg(feature = "keygen")]
 impl Voter {
     fn new(ek: &str) -> Voter {
         // deserialize encryption key

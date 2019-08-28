@@ -1,5 +1,7 @@
+#[cfg(feature = "keygen")]
 extern crate paillier;
 
+#[cfg(feature = "keygen")]
 use paillier::*;
 
 #[cfg(not(feature = "keygen"))]
