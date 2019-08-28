@@ -13,7 +13,6 @@ serde_derive = "1.0"
 
 [dependencies.curv]
 git = "https://github.com/KZen-networks/curv"
-branch = "known_issues"
 
 [dev-dependencies]
 bencher = "0.1"
